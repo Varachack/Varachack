@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+
+<title>Developers' Words</title>
+<link></link>
+<description>Straight from the source.</description>
+
+<item>
+<title>Renovations</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>Chris and Fabricio are in the process of developing further ships for the secondary part of this project, which is expected to materialize after the completion of the first part of the project. These ships, also like the ones released in the first part of the project, will be a continuation of the variety of ships between the 20th and 21st centuries. Liners 151-169 are now listed on the Liner Progress page on the last chart.</description>
+<pubDate>Fri, 10 Jun 2016 05:00:00 EST</pubDate>
+
+</item>
+<item>
+<title>Work's Being Done</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>Background work on the project and this website is constantly being done, and sometimes mistakes are made, so please bear with them for the time being. If a mistake is noticed or spotted anywhere, it will be corrected with the accurate information.</description>
+<pubDate>Sat, 11 Jun 2016 06:00:00 EST</pubDate>
+</item>
+
+<item>
+<title>XML Feed Added!</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>Chris has implemented an RSS feed onto the homepage, as you all can see, so news can be easier to read and it won't pile up in a regular text paragraph on the homepage. It fits in wonderfully with the other RSS feed beside this one for a unified and complete theme for our newly redone homepage. We hope you enjoy it.</description>
+<pubDate>Sat, 18 Jun 2016 07:00:00 EST</pubDate>
+</item>
+
+<item>
+<title>More Liners In the Works</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>After a small discussion between Chris and Fabricio during the night before, the newest—yet temporary—list of future projects for the other phases of the project has been published on the Future Projects page. These projects, as the others were also, are ships that span the late 19th and 20th centuries, and should definitely spark some interest like the other liners have.</description>
+<pubDate>Sun, 19 Jun 2016 04:15:00 EST</pubDate>
+</item>
+
+<item>
+<title>Hamburg-Sud Line Page Fixed</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>For whatever reason, the iframe on the Hamburg-Sud Line's page redirected you to the actual site in which its history is listed, which was really supposed to be in the iframe next to the included ships panel. I have replaced the page with a text only version for easier load times and redirection prevention. Funny because nobody reported this issue.</description>
+<pubDate>Mon, 27 Jun 2016 14:43:00 EST</pubDate>
+</item>
+
+<item>
+<title>Comment Section Added!</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>I think I've been shutting you guys out too long, but I've finally managed to add a proper comment system to the Contact Us page, courtesy of Disqus. You can write all of your inquiries and general comments about the project (or things related) right there on that page now. If you don't have a Disqus account or do not wish to have one, you can use one of the alternative account login options that are provided in order to comment. Please though, I would like to request that you all conduct yourselves accordingly and in mature manners. We're all adults here.
+</description>
+<pubDate>Tue, 28 Jun 2016 15:30:00 EST</pubDate>
+</item>
+
+<item>
+<title>Brief Info</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>I apologize for not changing the calendar date to today (Friday, the 1st), but it is fixed now because today I actually am converting the next ship. I also think you guys should take the new commenting system out for a spin, since nobody commented yet. Wouldn't hurt, and after all I don't bite...</description>
+<pubDate>Fri, 1 Jul 2016 15:40:00 EST</pubDate>
+</item>
+
+<item>
+<title>More Shipping Line Pages</title>
+<link>http://feeds.feedburner.com/DevelopersWords</link>
+<description>As the total amount of liners continues to increase, their shipping line pages also have to be accounted for on the Downloads page, so I have recently introduced the entries for the remaining 5 (and probably more) shipping lines for the liners on the Downloads page. As of now, only 1 of the 5 pages are completed (being the Ward Line), and the remaining 4 will probably be created as the associated liners belonging to the shipping line in question is in the process of being converted. We would like to request your patience up until the final liner is completed, and I have certainly not forgotten about the impending release of ships.</description>
+<pubDate>Tue, 12 Jul 2016 13:12:00 EST</pubDate>
+</item>
+
+<item>
+<title>Yes, the site is wider!</title>
+<link>http://feeds.feedburner.com/</link>
+<description>Good afternoon, sailors! If you've already not noticed, our website is a little wider, to accommodate for all of the text which had to be abbreviated (which no longer is, thankfully!) The site's maximum width is now 1360 pixels, which surprisingly made a substantial difference! All of the pages of our site look refreshed and refined now, with the added width, and beneficially, all of our images are a little larger, so I do hope that the charts/tables posted here are a little easier to read now (since they should be larger), but essentially, I do hope all you all enjoy the small changes (with this one being big) that have been made to the website lately! Happy sailing!</description>
+<pubDate>Tue, 19 Jul 2016 19:27:00 EST</pubDate>
+</item>
+
+<item>
+<title>Fixing a Few Things</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good morning, sailors. Some of you may have had trouble clicking the 'Downloads' button on the shipping line pages, which was supposed to take you directly back to the Downloads page or whatever page you were on prior to clicking that button. I am trying to find, or have found, a cross-browser solution for an efficient code that is literally supposed to click the back button of your browser. After spending a few minutes trying to decide which code is optimal for both browsers and simultaneously editing 34 files (thanks to Dropbox and Notepad++), I believe I have found a proper solution which works in both Chrome and Firefox, so you can stop blaming the site, or your browser. That was just me tinkering with the code to get it to work properly on both browsers, but I wanted you all to be aware of that. That's all for now.</description>
+<pubDate>Sun, 24 Jul 2016 01:49:00 EST</pubDate>
+</item>
+
+<item>
+<title>Quick Update</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Hey, sailors. The calendar widget is corrected after it somehow became bugged. I'm glad this is fixed though. I know you're all still waiting for a new pack of ships to be released as well, but sometime in the very near future you all will be receiving another one. This is all for now. Until next time, sailors.</description>
+<pubDate>Sat, 6 Aug 2016 01:29:00 EST</pubDate>
+</item>
+
+<item>
+<title>Second Stage Initiation</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good evening, sailors! Today the second stage of the project will begin immediately after the completion of the first, and you will probably notice some slight changes with the Shipyard News and FAQ pages (and possibly more), although I don't exactly know what changes these will be yet because Stage 1 is not yet completed, but over the next few forthcoming hours and probably into tomorrow, some cosmetic changes will be made that have to reflect the point of the project in which we are currently. As said however, I don't exactly know which changes these will be and how they will eventually look, but I do know that the content is currently there on those pages will indeed be modified in some way. This is just a heads-up before I actually go about doing that after the main events are taken care of. A new ship pack—and probably many more—will be released tomorrow to celebrate the first stage completion of the project. I want to thank you all—my supports, players of the simulators and collaborators alike—for your patience and diligence up until this crucial point of the project. I sincerely appreciate it and the project could never come to fruition without the support from you all. Have a nice morning, afternoon, evening or night to all sailors worldwide, and a new chapter of the project will begin soon.</description>
+<pubDate>Fri, 19 Aug 2016 19:03:00 EST</pubDate>
+</item>
+
+<item>
+<title>Personal Update</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Hello, sailors! It's been a little while since the last update, but I just needed to fill you all in on the current situation. Tuesday, August 30th, I began my fall semester college courses so I will be occupied with those for the time being. I don't actually have class every day like I did originally, and that of course will give me time to focus on my courses and the project itself. Yesterday (September 1st), I had my upper wisdom teeth extracted in a crucial dental procedure, and now today I am recuperating from the surgery and I honestly hope for a quick recovery. I am gradually recovering, though by Sunday I should be feeling somewhat better than I already am; enough to at least resume the project. Fortunately I can continue with Bergensfjord, and this will not cause any complications to the project from my knowledge. This is also why there was originally no date for Bergensfjord's conversion. I apologize for any inconveniences thus far, but the aforementioned are the current circumstances. Thank you all for your time, and happy sailing!</description>
+<pubDate>Fri, 2 Sep 2016 20:11:00 EST</pubDate>
+</item>
+
+<item>
+<title>Heads Up</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good afternoon, sailors. I have decided to remove HAL's Rotterdam of 1972 from the official project progress charts containing the original ships of this project, and instead classified it as an additional ship, as I have calculated that the extra addition (#201) will interfere with the actual statistics of the project, including the number of completed ships that were originally part of the project. Consequently, there will be an even total of 200 ships for the second stage of the project. At the time this is written, it should be 165 completed ships, as there are 35 remaining ships, which would bring the completed total of ships to 200 when all ships of Stage 2 (#151-200) are completed. If Mexico (#151) is completed before the end of the third chart of ships is reached, the number of completed ships and the latest ship that is completed on the chart will remain consistent, otherwise being the same number. For instance if Mexico (#151) is completed before Italia (#167), the number of completed ships would then be 166 (being 165 currently), and when Italia is subsequently completed, it will then be the 167th completed ship, with Italia already being the 167th ship on the chart. If Rotterdam remained on the fourth chart as a completed ship, there would be an inconsistency with the number of completed ships and the latest completed ship. This change is being made for the sake of the project data's consistency and all of the current data has been adjusted accordingly.
+</description>
+<pubDate>Mon, 19 Sep 2016 21:27:00 EST</pubDate>
+</item>
+
+<item>
+<title>More Page Modifications</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Hello, sailors. I am providing another minor update. Some of you may have already noticed that the shipping line pages in the Downloads section were slightly modified between late last night and today as well. Those changes should otherwise be complete unless I have further changes to make, but I should not. I have removed the slideshows containing the corresponding ships from each associated shipping line page to improve page loading performance (and they may have also been redundant due to the Liner Index page), and I have also decided to improve the ship lists to give them a tidy banded effect for the table, as well as the launch/operation year for each ship written aside, rather than just a plain boring list. For those shipping line pages which do not yet have a dedicated article written on Wikipedia/Wikiwand and instead have nothing provided, I have added a neat 'Coming Soon' animation/gif to those frames which would otherwise contain the proper content in the form of an article. This should not negatively impact page loading performance, either. Lastly, a short loading screen for the ship lists has also been implemented for each shipping line page—after spending a relatively long amount of time integrating this for all 38 shipping line pages. Whew. I do hope that you all enjoy these changes, and please—by all means—let me know if there are any issues with any of the pages on this website via the Contact Us page. It is crucial that I correct every major error/bug possible to provide you all with a streamlined and professional experience in order to leave outstanding first impressions upon you all that reflect this site. Nonetheless, this is all of the information I have for now. Also, a new ship pack is around the corner, of course. Thank you all very much for your time however, and happy sailing to all of our eager sailors!
+</description>
+<pubDate>Wed, 21 Sep 2016 22:40:00 EST</pubDate>
+</item>
+
+<item>
+<title>Important Update</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Greetings, sailors. I apologize for the temporary downtime of this website. Today, Dropbox has ceased the ability to render HTML content directly through iframes that are embedded on webpages, such as the ones that are on the downloads page and everywhere else on this site. Because this is the case, the files will instead request to be downloaded when attempted to be viewed through iframes on webpages that otherwise display the HTML file(s). The HTML files do not need to be downloaded from this site, because I have switched my file hosting service for the HTML files in order to correctly display them on this site, and I accidentally forgot to revise the iframes on the downloads page today, which prompted everyone to download my HTML files when the pages were visited—so I apologize for that. If any of you have downloaded my HTML files, you may delete them from your system because they are not needed and are only for display purposes. I have attempted to revise all other existing iframes on this website to prevent the HTML files from being needlessly downloaded, so this issue should not occur again. This is all for now—and a new ship pack is in the works—so please stay tuned. Happy sailing to everyone!
+</description>
+<pubDate>Mon, 3 Oct 2016 19:25:00 EST</pubDate>
+</item>
+
+<item>
+<title>V1 Update Pack Released</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good morning, afternoon or night to all sailors worldwide. Tonight I've released an update pack for the Italian Line ships, as it was reported (by few) that there were noticeable visual issues, but fortunately these have all been corrected already and the afflicted ships have been reuploaded in the secondary version of the Italian Line pack of ships. Also included are new ships, but you'll have to see for yourselves which ships those are. If you already have the original Italian Line pack of ships, remove them and re-install the updated package containing the corrected ships, plus the newly included ones (just to be safe). The upgrade package is now available on the Italian Line page as it should be. Keep on sailing, sailors.
+</description>
+<pubDate>Sun, 30 Oct 2016 21:51:00 EST</pubDate>
+</item>
+
+<item>
+<title>V2 Update Pack Released</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Just a quick heads-up, sailors. The Italian Pack has received another update (V2) which should fix the remainder of the existing problems that were still present with certain ships; notably the Antonia Graza and Andrea Doria. This time, you can download the Italian Line pack again and update only these two vessels, as those two ships were the only ones that have been updated. Perhaps in the future I can provide an easier update system that does not involve redownloading the entire packages in whole, but instead the updated ships individually. The next time any of the ships have to be updated however, this will be highly considered in order to make the updating experience much smoother for everyone. I must stress that if any visual issues are noticed for any of the released ships, that I strongly urge you all to notify us about them so they can be corrected. Necessary prioritizing will be made to compensate for the correction of the afflicted ships, so if no one notifies us about any existing issues, they will not be noticed until far later. We very much appreciate it. Happy sailing until next time, guys.
+</description>
+<pubDate>Wed, 2 Nov 2016 12:27:00 EST</pubDate>
+</item>
+
+<item>
+<title>V3 Update Pack Released</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good evening, sailors. Just another quick announcement. V3 of the Italian Line Update Pack has been released. This time, I've reviewed as many things as possible for each contained model, and worked diligently to correct the existing issues that they had. I think this update repaired more issues with the ships than the other two original packs that were released. As with the original procedure, replace all of the Italian Line ships that you have originally downloaded with the updated ships that are contained in the package. The package can be found in the Italian Line section of the Downloads page, as always. Again I do ask that you all report visual issues with the models to us so they can be corrected as soon as possible; I'd like for you all to be a part of this project as much as the team already is. I do apologize for any inconveniences that this may have caused to any of you. Thank you very much, and happy sailing to you all.
+</description>
+<pubDate>Fri, 3 Nov 2016 17:33:00 EST</pubDate>
+</item>
+
+<item>
+<title>Important Poll Added!</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good afternoon, sailors. Today I've taken the time to create and install an important poll widget on the lower part of the FAQ page which will ask you all a few questions about the site—you all however may want to go and complete the poll—as it affects the outcome of the next ship pack that will be released, so I strongly advise that you guys complete the poll in order to input your feedback towards the ship packs that you want to be released early. You even get to see the countries of origin of the other individuals who placed a vote in the poll with the help of a cool world map overview that the widget provides. I figured that would be an interesting way to release ship packs, just to see the results that are produced afterwards when you all complete the poll. It may also help clear some of the confusion towards which ones will be released afterwards. Next week I will tally the results from the poll and then according to which shipping line's pack receives the most votes, will be the pack that is released promptly thereafter. So go on and place your votes, sailors! Happy sailing until next time!
+</description>
+<pubDate>Mon, 7 Nov 2016 23:08:00 EST</pubDate>
+</item>
+
+<item>
+<title>Essential Notice (Updated)</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good evening, sailors. The poll question concerning the release of the next ship pack has been modified, and you can all revisit the poll located on the FAQ page in order to place another vote of your choice towards the next ship pack's release. However, after this particular poll question is closed, the ship packs will begin to be released systematically or methodically, so there will not be long waiting periods between the time the poll question is closed/changed and the time the votes for the poll question are tallied in order for the next ship pack to be released. Additionally, starting next week there should be more frequent releases of ship packs as there will be no poll question to vote for; the order in which the packs will be released has not yet been finalized and is still a topic of discussion as of now. As the second stage of the project comes to its completion, the secondary aspect of this project involving releases of ship packs will gradually become more important until it is a main priority in the third stage. Once the ship packs begin being released, announcements will be made accordingly and each one will be denoted on the Releases page within the Downloads page. During the upcoming holiday, this project will be paused until the following week (Nov. 28th) as noted on the calendar, but our project team wishes that our visitors, supporters and sailors worldwide enjoy themselves this holiday season. This is just an informational update for those who are/were wondering about the current and future circumstances of this project. Thank you all for your time however, and this will be all for now. Happy holidays and happy sailing this holiday season, sailors. We will see you all next week.
+</description>
+<pubDate>Wed, 23 Nov 2016 01:04:00 EST</pubDate>
+</item>
+
+<item>
+<title>Essential Notice; Part 2</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good afternoon, sailors. We hope you've all happily enjoyed your holiday weekends with your families. Due to the poll question that is currently tied concerning the release of the next ship pack, it will not count—especially since the Orient ships are incompleted, and there were no intentions for any ship packs to be released without the complete set of ships, and the fact that ship packs will start to be released systematically or methodically (to avoid long waiting periods between voting and tallying), which is mentioned in the previous update beneath this one. Hopefully this does not instill or cause any inconveniences, as the second part of the project is about to cease, which will effectively make the releases of the forthcoming ship packs that much of a higher priority by early December next month. With this being said, the poll question concerning the releases of ship packs will be omitted later on, and only the two main questions of course will remain for future visitors to place their votes on. If another question of relative importance is/has to be added, it will be done so accordingly. This will be all for now, and the project will resume progress by tomorrow afternoon to remain on schedule. Please stay tuned for incoming and future updates, share this website with your friends in case they could be interested, and thank you all for your patience. Happy sailing until next time.
+</description>
+<pubDate>Mon, 28 Nov 2016 15:01:00 EST</pubDate>
+</item>
+
+<item>
+<title>Important Announcement</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good afternoon to all of our sailors worldwide. We do hope that you've all happily enjoyed your holiday weekends with your families. Today however we have one important announcement. Many of you have probably noticed by now that a Donations page has recently been introduced to our site, and rightfully so. Currently, our project team has intentions to create additional content such as donationware models and media that will be available on YouTube which would otherwise showcase the content that we have to offer for this project. Fabricio also has educational intents for this project which would involve the visual improvement of our project models which involves efficiently, decoratively and accurately constructing his models based off of the books that he intends to purchase for these intentions concerning the further development of the content contained in our project. Essentially we will need to improve the quality of our models. For the content and media creation/development however, we'll be requiring higher-tier equipment (or more powerful PC upgrades) in order to successfully do this. We kindly ask, because of this, that our supporters at least make a small donation or contribution to our project's efforts in order for us to further our own efforts we've applied to our project. Hopefully sometime during the new year will we actually be able to get started with the project expansion efforts. More important information about the donations system, donationware and donation aspects/circumstances can be found on the Donations page of this website for those of you who were generally interested and/or intend to make a donation or contribution to our project efforts. Donations are going to assist tremendously with our expansion efforts which will be very important, and this is another reason why we are now requesting them for this project. Our project team would like to extend a heartfelt thanks to those of you who decide to, on behalf of the work that has been done for our project over the course of two years. Thank you again to all of our viewers, supporters, and sailors worldwide for your support and contributions to our project, and happy sailing and happy holidays to you guys as well.
+</description>
+<pubDate>Tue, 27 Dec 2016 13:03:00 EST</pubDate>
+</item>
+
+<item>
+<title>Important Announcement</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good evening to all of our sailors worldwide! Today I want to provide the first bulletin update of the new year, and we have some key information that we need to share with you all. Lately I've been slightly ill so the general progress of our project—involving releases and revisions—has been slowed down because of this, but I sincerely do hope to be generally better by this weekend because much work still needs to be done. And we've finally reached our first donation goal of $25! Thanks to two gracious supporters of our project, we're able to save up towards the contributive efforts of our project for the better, and make some needed improvements to the current elements all contained within the development of our project. The updated donation goal is reflected on the donations page, and very soon our first donationware model will be freely released as promised! Once we reach our secondary donation goal, of course the second donationware model available in our project will also be freely released! Again we do want to thank our gracious supporters of our project from the bottom of our hearts for your contributions to our project over this course of time since its beginning, and we do hope that you all will continue to be wonderful supporters and contributors onwards as we continue to march through the further improvements and developments within the efforts the liner project team is putting forth in order to finalize the completion of our project. 2017 is looking like another important year for this project and the team, and we definitely want to make it one. This will be all for now however, and we want to wish safe voyages to all of our wonderful sailors worldwide; thank you.
+</description>
+<pubDate>Mon, 09 Jan 2017 18:34:00 EST</pubDate>
+</item>
+
+<item>
+<title>Starting Back Up [Edit]</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good afternoon, sailors.
+I apologize for the temporary absence and lack of updates. I've taken a lengthy break from our liner project as of yet due to some personal matters that led to the brief pause of our project thereafter—which is why I haven't posted or said anything at all. I intend however to restart all pending endeavors towards the completion of the renovations phase in order to begin the conversions of the next set of ships. I haven't forgotten about our French Line ships' release that you're all probably eagerly waiting for, so I am going to give a quick runaround, or observation, of each French Line ship to double-check for minor/major errors in order to correct/repair them and otherwise ready them for eventual release along with the rest of the ships, for which I am in the process of doing right now. This is really all that has to be said for now since you all deserve an update concerning these circumstances, but I do thank you all for your time and patience thus far, and I will try to keep you all posted about the progression made hereafter. Happy sailing to you guys.
+</description>
+<pubDate>Fri, 10 Feb 2017 14:38:00 EST</pubDate>
+</item>
+
+<item>
+<title>Project Filesize • Additional Information</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>This just a quick heads-up about the total size of this project, sailors. There are 41 total shipping line folders accounting for all 201 ships in the project so far, and this totals to approximately 16.5GBs on a hard disk, which is fairly large. If you haven't made space yet, please do. Because there is also a new set of ships currently in the works attributed to the fourth stage of this project, the total amount of ships for this project as well as its overall size are undoubtedly going to increase in the (near) future. I just wanted to let you all know this in case any of you were wondering, as no actual mentioning of the size of this project besides this announcement is mentioned on our site as of now. The revisions stage is slowly progressing, with about 71 ships remaining to inspect and perfect (as of now), so please be patient as I continue with this rather slow process in order to finalize it and continue converting the next set of ships. This is all I have for now, sailors, so happy sailing to everyone and have a nice morning, day, afternoon, evening or night to you all worldwide.
+</description>
+<pubDate>Wed, 22 Feb 2017 14:46:00 EST</pubDate>
+</item>
+
+<item>
+<title>Project Continuation</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good afternoon to our sailors worldwide. We want to elaborate or provide a new set of information about this project. As of now, 21 more ships belonging to this project have officially been created, which brings the grand total of models—including the 8 current additional ships—to 230 ships. Some important clarifications about the project's phases and stages also have to be made since deviations tend to be made sometimes, so we'll begin with those. Stage 1 of this project began in 2014 and it concerned the first set of 150 original models in this project. It was completed in August 2016 which began the second stage of the project concerning the next 50 ships. By then there were 200 total ships. The secondary stage of this project was later completed in December 2016 which then officially brought the project model total to 200. The tertiary/third stage of this project began development in 2017 which should bring the project's official model count to 250 (or more). The revisions and releases "phases" are separate aspects here but are indeed integrated into the structure of this project, and because of this, they have separated statistics noted on the FAQ page. Once the revisions phase is completed, the third stage will officially begin and the releases phase will also continue thereafter, for which all information about this project will officially be accurately updated (afterwards) to avoid confusion. If more ships are created, all relevant information will be adjusted accordingly as always. To learn the names of the 21 (current) new ships, visit the Revisions page and view the fifth chart displaying them. Background work will continue by any means, but we believe that this information will be all for now, and we do apologize for the lack of elaboration. Happy sailing to you guys.
+</description>
+<pubDate>Tue, 7 Mar 2017 16:20:00 EST</pubDate>
+</item>
+
+<item>
+<title>Informative Update</title>
+<link>http://fabricio3d.weebly.com/</link>
+<description>Good morning to all of our sailors worldwide. We realize that nothing really has been spoken of and nothing has really occurred over the course of this month, and we apologize for that. The team members are dealing with real life circumstances that call for short breaks taken from the project, and consequently the progress of the project is slowed down due to the important matters in question being taken care of. We intend for next month to be more eventful or incentivized and overall more appealing than this one, and so we want you all to begin anticipating any potentially forthcoming events. We also want to inform everyone that the project has not been ceased and that background work, including the development of more ships and potential releases, is still currently being done and processed, so we hope that this hiatus and further lack of communication has not caused any of our watchers or supporters to become disinterested in or discouraged from our endeavors. We apologize again for the lack of communication and progress, but the aforementioned message serves for informative purposes and to ensure that the project team has not vanished from the face of the planet. Thank you all for your time; we sincerely hope everyone understands our circumstances and that we want you guys to bear with us for the time being. This must be all for now, and so we wish happy sailing and smooth seas to our sailors worldwide.
+</description>
+<pubDate>Fri, 28 Apr 2017 11:30:00 EST</pubDate>
+</item>
+
+</channel>
+
+</rss>

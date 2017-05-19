@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+      body {
+        font-family: 'Source Sans Pro', serif;
+        font-size: 29px;
+      }
+    </style>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.1.0.js">
+ </script>
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+    <style type="text/css">
+        .progressbar {
+            position: relative;
+            display: block;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            width: 100%;
+            background: #ffffff;
+            height: 35px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -webkit-transition: 0.4s linear;
+            -moz-transition: 0.4s linear;
+            -ms-transition: 0.4s linear;
+            -o-transition: 0.4s linear;
+            transition: 0.4s linear;
+            -webkit-transition-property: width, background-color;
+            -moz-transition-property: width, background-color;
+            -ms-transition-property: width, background-color;
+            -o-transition-property: width, background-color;
+            transition-property: width, background-color;
+        }
+        
+        .progressbar-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 170px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000000;
+            background: rgba(0, 0, 0, 0.0);
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        
+        .progressbar-title span {
+            display: block;
+            background: rgba(0, 0, 0, 0.0);
+            padding: 0 20px;
+            height: 35px;
+            line-height: 35px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        
+        .progressbar-bar {
+            height: 35px;
+            width: 0px;
+            background: #000000;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+        
+        .progress-bar-percent {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 20px;
+            height: 35px;
+            line-height: 35px;
+            color: #000000;
+            color: rgba(0, 0, 0, 1);
+        }
+    </style>
+
+<style>
+hr {
+    -moz-box-sizing: border-box;
+    -moz-float-edge: margin-box;
+    border: 1px inset;
+    color: black;
+    display: block;
+    margin: 0.3em auto;
+}
+</style>
+
+    <script type='text/javascript'>
+        //<![CDATA[
+        window.onload = function() {
+                jQuery(document).ready(function() {
+                    jQuery('.progressbar').each(function() {
+                        jQuery(this).find('.progressbar-bar').animate({
+                            width: jQuery(this).attr('data-percent')
+                        }, 1000);
+                    });
+                });
+            } //]]>
+    </script>
+</head>
+
+<style>
+ .demo {
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  padding:5px;
+ }
+ .demo th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+ }
+ .demo td {
+  border:1px solid #C0C0C0;
+  padding:5px;
+ }
+</style>
+
+<style>
+   .greenBorder {border: 1px solid green;}   
+   .container {
+    display: table;
+    overflow: hidden;
+    display: table-cell; 
+    vertical-align: middle;
+   }
+</style>
+
+<style>
+.outer {
+    display: table;
+    position: fixed;
+    height: 98%;
+    width: 100%;
+}
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner {
+    margin-left: auto;
+    margin-right: 17px;
+}
+div.hidden {
+    display: none;
+}
+</style>
+
+<body>
+<div class="outer">
+<div class="middle">
+<div class="inner">
+
+<CENTER>
+<font color="BLACK">
+<font size="5px">
+<B></B>
+</font>
+</center>
+
+<hr>
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Conversion&nbsp(Overall)</span></div>
+        <div class="progressbar-bar" style="background: #EC1111;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+<hr>
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Configuration</span></div>
+        <div class="progressbar-bar" style="background: #EC6B11;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Propeller(s)</span></div>
+        <div class="progressbar-bar" style="background: #F1E609;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Rudder(s)</span></div>
+        <div class="progressbar-bar" style="background: #4CF109;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Lights</span></div>
+        <div class="progressbar-bar" style="background: #09F1B2;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Smoke(s)</span></div>
+        <div class="progressbar-bar" style="background: #0964F1;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Sounds</span></div>
+        <div class="progressbar-bar" style="background: #5609F1;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+<div class="hidden">
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Radar(s)</span></div>
+        <div class="progressbar-bar" style="background: #F109E6;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+<hr>
+</div>
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Corrections</span></div>
+        <div class="progressbar-bar" style="background: #EA09F1;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+
+    <div class="progressbar clearfix " data-percent="100%">
+        <div class="progressbar-title"><span>Sea Trials</span></div>
+        <div class="progressbar-bar" style="background: #F1098F;"></div>
+        <div class="progress-bar-percent">100%</div>
+    </div>
+<hr>
+<center>
+<b>
+STATUS:
+<u>
+<font color="Green">
+COMPLETE!
+</u>
+</b>
+</center>
+</font>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
