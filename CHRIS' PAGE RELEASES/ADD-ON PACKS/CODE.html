@@ -10,9 +10,65 @@
   </head>
   <body>
 
-<center>
-<img src="http://theliners.droppages.com/tlp/release%20status/r.png" width="460" height="46">
-</center>
+<style>
+
+#container {
+  position: relative;
+  width: 460px;
+  height: 46px;
+}
+#container div {
+  position: absolute;
+  width: 460px;
+  height: 46px;
+  opacity: 0;
+  background-image: url(https://varachack.github.io/Varachack/BUTTONS/U.png);
+    background-size: 460px 46px;
+}
+#container div.bottom {
+  opacity: 1;
+  background-image: url(https://varachack.github.io/Varachack/RELEASE%20STATUS/R.png);
+      background-size: 460px 46px;
+}
+#container div.top {
+  -webkit-animation: anim 3s infinite alternate;
+  animation: anim 3s infinite alternate;
+}
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  36.36% {
+    opacity: 0;
+  }
+  63.63% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  36.36% {
+    opacity: 0;
+  }
+  63.63% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+  
+
+<div id="container">
+  <div class="bottom"></div>
+  <div class="top"></div>
+</div>
 
 <hr>
 FSX SERIES 1 ADD-ON PACK
@@ -53,7 +109,7 @@ div{
  <tr>
   <th>
    <center>
-    <a href="https://mega.nz/#!dtlBnSzB!yPtErq1IejgQaYSiRMcpM8d4_U_D3Oc_d0j5i-vKSzs" target="parent">
+    <a href="https://mega.nz/#!Ug9CVbJY!iyqI4whILWVxkuVjh5zo21rlAe5tckJGMhQBIbznvGs" target="parent">
      <img src="https://varachack.github.io/Varachack/BUTTONS/D3.png" width="210" height="58">
     </a>
    </center
