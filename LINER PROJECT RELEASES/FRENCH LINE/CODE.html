@@ -1,17 +1,73 @@
 <html>
 
-<head>
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
-	<style>
-	body {}
-	</style>
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <style>
+      body {
+      }
+    </style>
+
+<style>
+
+#container {
+  position: relative;
+  width: 460px;
+  height: 46px;
+}
+#container div {
+  position: absolute;
+  width: 460px;
+  height: 46px;
+  opacity: 0;
+  background-image: url(https://varachack.github.io/Varachack/BUTTONS/U.png);
+    background-size: 460px 46px;
+}
+#container div.bottom {
+  opacity: 1;
+  background-image: url(https://varachack.github.io/Varachack/RELEASE%20STATUS/R.png);
+      background-size: 460px 46px;
+}
+#container div.top {
+  -webkit-animation: anim 3s infinite alternate;
+  animation: anim 3s infinite alternate;
+}
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  36.36% {
+    opacity: 0;
+  }
+  63.63% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  36.36% {
+    opacity: 0;
+  }
+  63.63% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+  </head>
 
 <body>
 
-	<center>
-		<img src="http://theliners.droppages.com/tlp/release%20status/r.png" width="460" height="46">
-	</center>
+<div id="container">
+  <div class="bottom"></div>
+  <div class="top"></div>
+</div>
 
 	<hr>
 	<table class="demo">
@@ -20,6 +76,10 @@
 			</tr>
 		</thead>
 		<tbody>
+			<tr>
+				<td>S.S. IMPÉRATRICE EUGÉNIE</td>
+				<td><center>1864</center></td>
+			</tr>
 			<tr>
 				<td>S.S. FRANCE</td>
 				<td><center>1910</center></td>
@@ -97,7 +157,7 @@
 			<tr>
 				<th>
    <center>
-    <a href="https://mega.nz/#!t19DSRqI!IxohXr3sqXTl5Udj7nB4XmwdYFHNBLRku44kTNkvXEc" target="parent">
+    <a href="https://mega.nz/#!chMlHLiL!KtJL3gyJkWWtzZz63XVMhHJbaFpf-LJqpoR50R0dmMY" target="parent">
      <img src="https://varachack.github.io/Varachack/BUTTONS/D3.png" width="210" height="58">
     </a>
    </center>
