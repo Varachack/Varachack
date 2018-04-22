@@ -1,0 +1,236 @@
+<html>
+        <head>
+            <title>Braille Cipher</title>
+            <script>
+  validator = "⠯&⠤-⠒:⠆;⠖!⠦?abcdefghjiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
+  vowels = "aeiouyAEIOUY";
+
+  aemap = new Array();
+  aemap["⠁"] = "a";  aemap["⠃"] = "b";  aemap["⠉"] = "c";  aemap["⠙"] = "d";
+  aemap["⠑"] = "e";  aemap["⠋"] = "f";  aemap["⠛"] = "g";  aemap["⠓"] = "h";
+  aemap["⠊"] = "i";  aemap["⠚"] = "j";  aemap["⠅"] = "k";  aemap["⠇"] = "l";
+  aemap["⠍"] = "m";  aemap["⠝"] = "n";  aemap["⠕"] = "o";  aemap["⠏"] = "p";
+  aemap["⠟"] = "q";  aemap["⠗"] = "r";  aemap["⠎"] = "s";  aemap["⠞"] = "t";
+  aemap["⠥"] = "u";  aemap["⠧"] = "v";  aemap["⠺"] = "w";  aemap["⠭"] = "x";
+  aemap["⠽"] = "y";  aemap["⠵"] = "z";  
+  aemap["⠂"] = ",";						aemap[","] = ",";
+  aemap["⠄"] = "'";						aemap["'"] = "'";
+  aemap["⠲"] = ".";						aemap["."] = ".";
+  aemap["⠦"] = "?";						aemap["?"] = "?";
+  aemap["⠖"] = "!";						aemap["!"] = "!";
+  aemap["⠆"] = ";";						aemap[";"] = ";";
+  aemap["⠒"] = ":";						aemap[":"] = ":";
+  aemap["⠤"] = "-";						aemap["-"] = "-";
+  aemap["⠯"] = "&";						aemap["&"] = "&";
+ 
+  aemap["A"] = "a";  aemap["B"] = "b";  aemap["C"] = "c";  aemap["D"] = "d";
+  aemap["E"] = "e";  aemap["F"] = "f";  aemap["G"] = "g";  aemap["H"] = "h";
+  aemap["I"] = "i";  aemap["J"] = "j";  aemap["K"] = "k";  aemap["L"] = "l";
+  aemap["M"] = "m";  aemap["N"] = "n";  aemap["O"] = "o";  aemap["P"] = "p";
+  aemap["Q"] = "q";  aemap["R"] = "r";  aemap["S"] = "s";  aemap["T"] = "t";
+  aemap["U"] = "u";  aemap["V"] = "v";  aemap["W"] = "w";  aemap["X"] = "x";
+  aemap["Y"] = "y";  aemap["Z"] = "z";
+  
+  aemap["a"] = "a";  aemap["b"] = "b";  aemap["c"] = "c";  aemap["d"] = "d";
+  aemap["e"] = "e";  aemap["f"] = "f";  aemap["g"] = "g";  aemap["h"] = "h";
+  aemap["i"] = "i";  aemap["j"] = "j";  aemap["k"] = "k";  aemap["l"] = "l";
+  aemap["m"] = "m";  aemap["n"] = "n";  aemap["o"] = "o";  aemap["p"] = "p";
+  aemap["q"] = "q";  aemap["r"] = "r";  aemap["s"] = "s";  aemap["t"] = "t";
+  aemap["u"] = "u";  aemap["v"] = "v";  aemap["w"] = "w";  aemap["x"] = "x";
+  aemap["y"] = "y";  aemap["z"] = "z";
+  
+////////////////////////////////////////////////////////////////////////////////////////
+
+  eamap = new Array();
+  eamap["a"] = "⠁";  eamap["b"] = "⠃";  eamap["c"] = "⠉";  eamap["d"] = "⠙";
+  eamap["e"] = "⠑";  eamap["f"] = "⠋";  eamap["g"] = "⠛";  eamap["h"] = "⠓";
+  eamap["i"] = "⠊";  eamap["j"] = "⠚";  eamap["k"] = "⠅";  eamap["l"] = "⠇";
+  eamap["m"] = "⠍";  eamap["n"] = "⠝";  eamap["o"] = "⠕";  eamap["p"] = "⠏";
+  eamap["q"] = "⠟";  eamap["r"] = "⠗";  eamap["s"] = "⠎";  eamap["t"] = "⠞";
+  eamap["u"] = "⠥";  eamap["v"] = "⠧";  eamap["w"] = "⠺";  eamap["x"] = "⠭";
+  eamap["y"] = "⠽";  eamap["z"] = "⠵";
+  
+  eamap[","] = "⠂";  eamap["⠂"] = "⠂";
+  eamap["."] = "⠲";  eamap["⠲"] = "⠲";
+  eamap["'"] = "⠄";  eamap["⠲"] = "⠲";
+  eamap["?"] = "⠦";  eamap["⠦"] = "⠦";
+  eamap["!"] = "⠖";  eamap["⠖"] = "⠖";
+  eamap[";"] = "⠆";  eamap["⠆"] = "⠆";
+  eamap[":"] = "⠒";  eamap["⠒"] = "⠒";
+  eamap["-"] = "⠤";  eamap["⠤"] = "⠤";
+  eamap["&"] = "⠯";  eamap["⠯"] = "⠯";
+
+  eamap["A"] = "⠁";  eamap["B"] = "⠃";  eamap["C"] = "⠉";  eamap["D"] = "⠙";
+  eamap["E"] = "⠑";  eamap["F"] = "⠋";  eamap["G"] = "⠛";  eamap["H"] = "⠓";
+  eamap["I"] = "⠊";  eamap["J"] = "⠚";  eamap["K"] = "⠅";  eamap["L"] = "⠇";
+  eamap["M"] = "⠍";  eamap["N"] = "⠝";  eamap["O"] = "⠕";  eamap["P"] = "⠏";
+  eamap["Q"] = "⠟";  eamap["R"] = "⠗";  eamap["S"] = "⠎";  eamap["T"] = "⠞";
+  eamap["U"] = "⠥";  eamap["V"] = "⠧";  eamap["W"] = "⠺";  eamap["X"] = "⠭"; 
+  eamap["Y"] = "⠽";  eamap["Z"] = "⠵";
+  
+  eamap["⠁"] = "a";  eamap["⠃"] = "b";  eamap["⠉"] = "c";  eamap["⠙"] = "d";
+  eamap["⠑"] = "e";  eamap["⠋"] = "f";  eamap["⠛"] = "g";  eamap["⠓"] = "h";
+  eamap["⠊"] = "i";  eamap["⠚"] = "j";  eamap["⠅"] = "k";  eamap["⠇"] = "l";
+  eamap["⠍"] = "m";  eamap["⠝"] = "n";  eamap["⠕"] = "o";  eamap["⠏"] = "p";
+  eamap["⠟"] = "q";  eamap["⠗"] = "r";  eamap["⠎"] = "s";  eamap["⠞"] = "t";
+  eamap["⠥"] = "u";  eamap["⠧"] = "v";  eamap["⠺"] = "w";  eamap["⠭"] = "x";
+  eamap["⠽"] = "y";  eamap["⠵"] = "z";
+  
+////////////////////////////////////////////////////////////////////////////////////////
+
+  promap = new Array();
+  promap["⠁"] = "a";  promap["⠃"] = "b";  promap["⠉"] = "c";  promap["⠙"] = "d";
+  promap["⠑"] = "e";  promap["⠋"] = "f";  promap["⠛"] = "g";  promap["⠓"] = "h";
+  promap["⠊"] = "i";  promap["⠚"] = "j";  promap["⠅"] = "k";  promap["⠇"] = "l";
+  promap["⠍"] = "m";  promap["⠝"] = "n";  promap["⠕"] = "o";  promap["⠏"] = "p";
+  promap["⠟"] = "q";  promap["⠗"] = "r";  promap["⠎"] = "s";  promap["⠞"] = "t";
+  promap["⠥"] = "u";  promap["⠧"] = "v";  promap["⠺"] = "w";  promap["⠭"] = "x";
+  promap["⠽"] = "y";  promap["⠵"] = "z";
+  
+  promap["⠂"] = ",";
+  promap["⠄"] = "'";
+  promap["⠦"] = "?";
+  promap["⠲"] = ".";
+  promap["⠖"] = "!";
+  promap["⠆"] = ";";
+  promap["⠒"] = ":";
+  promap["⠤"] = "-";
+  promap["⠯"] = "&";
+  
+  promap["⠠⠠⠁"] = "A";  promap["⠠⠠⠃"] = "B";  promap["⠠⠠⠉"] = "C";  promap["⠠⠠⠙"] = "D";
+  promap["⠠⠠⠑"] = "E";  promap["⠠⠠⠋"] = "F";  promap["⠠⠠⠛"] = "G";  promap["⠠⠠⠓"] = "H";
+  promap["⠠⠠⠊"] = "I";  promap["⠠⠠⠚"] = "J";  promap["⠠⠠⠅"] = "K";  promap["⠠⠠⠇"] = "L";
+  promap["⠠⠠⠍"] = "M";  promap["⠠⠠⠝"] = "N";  promap["⠠⠠⠕"] = "O";  promap["⠠⠠⠏"] = "P";
+  promap["⠠⠠⠟"] = "Q";  promap["⠠⠠⠗"] = "R";  promap["⠠⠠⠎"] = "S";  promap["⠠⠠⠞"] = "T";
+  promap["⠠⠠⠥"] = "U";  promap["⠠⠠⠧"] = "V";  promap["⠠⠠⠺"] = "W";  promap["⠠⠠⠭"] = "X";
+  
+  promap["a"] = "⠁";  promap["b"] = "⠃";  promap["c"] = "⠉";  promap["d"] = "⠙";
+  promap["e"] = "⠑";  promap["f"] = "⠋";  promap["g"] = "⠛";  promap["h"] = "⠓";
+  promap["i"] = "⠊";  promap["j"] = "⠚";  promap["k"] = "⠅";  promap["l"] = "⠇";
+  promap["m"] = "⠍";  promap["n"] = "⠝";  promap["o"] = "⠕";  promap["p"] = "⠏";
+  promap["q"] = "⠟";  promap["r"] = "⠗";  promap["s"] = "⠎";  promap["t"] = "⠞";
+  promap["u"] = "⠥";  promap["v"] = "⠧";  promap["w"] = "⠺";  promap["x"] = "⠭";
+  promap["y"] = "⠽";  promap["z"] = "⠵";  
+
+                function transme() {
+                    if (document.theform.picker[0].checked) { // english to braille 
+                        builder = "";
+                        toggler = 0;
+
+                        for (var i = 0; i < document.theform.stimulus.value.length; i++) {
+                            if (document.theform.stimulus.value.charAt(i) == "[") {
+                                toggler = 1;
+                            };
+                            if (document.theform.stimulus.value.charAt(i) == "]") {
+                                toggler = 0;
+                            };
+
+                            if (toggler == 1) {
+                                builder = builder + document.theform.stimulus.value.charAt(i);
+                            } else {
+                                if (validator.indexOf(document.theform.stimulus.value.charAt(i)) == -1) {
+                                    builder = builder + document.theform.stimulus.value.charAt(i);
+                                } else {
+                                    builder = builder + eamap[document.theform.stimulus.value.charAt(i)];
+                                };
+                            };
+                        };
+
+                        builder2 = "";
+                        toggler = 0;
+                        prev = 0;
+
+                        for (var i = 0; i < document.theform.stimulus.value.length; i++) {
+                            if (document.theform.stimulus.value.charAt(i) == "[") {
+                                toggler = 1;
+                            };
+                            if (document.theform.stimulus.value.charAt(i) == "]") {
+                                toggler = 0;
+                            };
+
+                            if (toggler == 1) {
+                                builder2 = builder2 + document.theform.stimulus.value.charAt(i);
+                            } else {
+                                if (validator.indexOf(document.theform.stimulus.value.charAt(i)) == -1) {
+                                    builder2 = builder2 + document.theform.stimulus.value.charAt(i);
+                                    prev = 0;
+                                } else {
+                                    temp = promap[eamap[document.theform.stimulus.value.charAt(i)]];
+                                    if (prev == 1) {
+                                        if ((vowels.indexOf(temp.charAt(0)) == -1) && (temp.length != 1)) {
+                                            builder2 = builder2 + "-";
+                                        };
+                                    };
+                                    builder2 = builder2 + temp;
+                                    prev = 1;
+                                };
+                            };
+                        };
+                        document.theform.response.value = builder + "\n\nSaying: \"" + builder2 + "\"";
+
+                    } else { //braille to english
+                        builder = "";
+                        toggler = 0;
+
+                        for (var i = 0; i < document.theform.stimulus.value.length; i++) {
+                            if (document.theform.stimulus.value.charAt(i) == "[") {
+                                toggler = 1;
+                            };
+                            if (document.theform.stimulus.value.charAt(i) == "]") {
+                                toggler = 0;
+                            };
+
+                            if (toggler == 1) {
+                                builder = builder + document.theform.stimulus.value.charAt(i);
+                            } else {
+                                if (validator.indexOf(document.theform.stimulus.value.charAt(i)) == -1) {
+                                    builder = builder + document.theform.stimulus.value.charAt(i);
+                                } else {
+                                    builder = builder + aemap[document.theform.stimulus.value.charAt(i)];
+                                };
+                            };
+                        };
+                        document.theform.response.value = builder;
+                    };
+                    return false;
+                };
+            </script>
+        </head>
+        
+        <body>
+            <center>
+            
+            <body bgcolor="#FAE1A5">
+                <p><b><u><font size=4 font color=blue>Braille Cipher</font></u></b>
+
+                    <form
+                    method="get" name="theform" action="" onSubmit="return transme()">
+                        <p><b><font size=3 font color=red>Translate Text:</font></b>
+
+                            <br><font color=purple>[Enclose notes and text which shouldn't be translated in 
+
+brackets].</font>
+
+                            <br>
+                            <textarea name="stimulus" cols="160" rows="9" wrap="VIRTUAL" style="background-color:#FAF0B4;"></textarea>
+                        </p>
+                        <p><b><font color=green>Translation:</font></b>
+
+                            <br>
+                            <textarea name="response" cols="160" rows="9" wrap="VIRTUAL" style="background-color:#FAF0B4;"></textarea>
+                        </p>
+                        <p><b><font color=brown>Translation and Phonetic Options:</font></b>
+
+                            <br>
+                            <input name="picker" type="radio" value="0" checked><b>Text to Braille (With Phrase)</b>
+
+                            <br>
+                            <input name="picker" type="radio" value="1"><b>Braille to Text</b>
+                            <br>
+                            <input type="submit" value="⠞⠗⠁⠝⠎⠇⠁⠞⠑⠖">
+                        </p>
+                        </form>
+            </body>
+    </center>
+
+</html>
