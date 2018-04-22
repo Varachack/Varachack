@@ -2,7 +2,7 @@
         <head>
             <title>Braille Cipher</title>
             <script>
-  validator = "⠯&⠤-⠒:⠆;⠖!⠦?abcdefghjiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
+  validator = "‘’“”⠯&⠤-⠒:⠆;⠖!⠦?abcdefghjiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
   vowels = "aeiouyAEIOUY";
 
   aemap = new Array();
@@ -12,16 +12,22 @@
   aemap["⠍"] = "m";  aemap["⠝"] = "n";  aemap["⠕"] = "o";  aemap["⠏"] = "p";
   aemap["⠟"] = "q";  aemap["⠗"] = "r";  aemap["⠎"] = "s";  aemap["⠞"] = "t";
   aemap["⠥"] = "u";  aemap["⠧"] = "v";  aemap["⠺"] = "w";  aemap["⠭"] = "x";
-  aemap["⠽"] = "y";  aemap["⠵"] = "z";  
-  aemap["⠂"] = ",";						aemap[","] = ",";
-  aemap["⠄"] = "'";						aemap["'"] = "'";
-  aemap["⠲"] = ".";						aemap["."] = ".";
-  aemap["⠦"] = "?";						aemap["?"] = "?";
-  aemap["⠖"] = "!";						aemap["!"] = "!";
-  aemap["⠆"] = ";";						aemap[";"] = ";";
-  aemap["⠒"] = ":";						aemap[":"] = ":";
-  aemap["⠤"] = "-";						aemap["-"] = "-";
-  aemap["⠯"] = "&";						aemap["&"] = "&";
+  aemap["⠽"] = "y";  aemap["⠵"] = "z";
+  
+  aemap["⠂"] = ",";	 aemap[","] = ",";
+  aemap["⠄"] = "'";	 aemap["'"] = "'";
+  aemap["⠲"] = ".";	 aemap["."] = ".";
+  aemap["⠦"] = "?";	 aemap["?"] = "?";
+  aemap["⠖"] = "!";	 aemap["!"] = "!";
+  aemap["⠆"] = ";";	 aemap[";"] = ";";
+  aemap["⠒"] = ":";	 aemap[":"] = ":";
+  aemap["⠤"] = "-";	 aemap["-"] = "-";
+  aemap["⠯"] = "&";	 aemap["&"] = "&";
+					 aemap["‘"] = "‘";
+					 aemap["’"] = "’";
+					 aemap["“"] = "“";
+  aemap["⠶"] = "&#034;";
+  aemap["”"] = "”";
  
   aemap["A"] = "a";  aemap["B"] = "b";  aemap["C"] = "c";  aemap["D"] = "d";
   aemap["E"] = "e";  aemap["F"] = "f";  aemap["G"] = "g";  aemap["H"] = "h";
@@ -50,15 +56,19 @@
   eamap["u"] = "⠥";  eamap["v"] = "⠧";  eamap["w"] = "⠺";  eamap["x"] = "⠭";
   eamap["y"] = "⠽";  eamap["z"] = "⠵";
   
-  eamap[","] = "⠂";  eamap["⠂"] = "⠂";
-  eamap["."] = "⠲";  eamap["⠲"] = "⠲";
-  eamap["'"] = "⠄";  eamap["⠲"] = "⠲";
-  eamap["?"] = "⠦";  eamap["⠦"] = "⠦";
-  eamap["!"] = "⠖";  eamap["⠖"] = "⠖";
-  eamap[";"] = "⠆";  eamap["⠆"] = "⠆";
-  eamap[":"] = "⠒";  eamap["⠒"] = "⠒";
-  eamap["-"] = "⠤";  eamap["⠤"] = "⠤";
-  eamap["&"] = "⠯";  eamap["⠯"] = "⠯";
+  eamap[","] = "⠂";  eamap["⠂"] = ",";
+  eamap["."] = "⠲";  eamap["⠲"] = ".";
+  eamap["'"] = "⠄";  eamap["⠄"] = "'";
+  eamap["?"] = "⠦";  eamap["⠦"] = "?";
+  eamap["!"] = "⠖";  eamap["⠖"] = "!";
+  eamap[";"] = "⠆";  eamap["⠆"] = ";";
+  eamap[":"] = "⠒";  eamap["⠒"] = ":";
+  eamap["-"] = "⠤";  eamap["⠤"] = "-";
+  eamap["&"] = "⠯";  eamap["⠯"] = "&";
+  eamap["‘"] = "⠄";
+  eamap["’"] = "⠄";	 
+  eamap["“"] = "⠶";
+  eamap["”"] = "⠶";
 
   eamap["A"] = "⠁";  eamap["B"] = "⠃";  eamap["C"] = "⠉";  eamap["D"] = "⠙";
   eamap["E"] = "⠑";  eamap["F"] = "⠋";  eamap["G"] = "⠛";  eamap["H"] = "⠓";
@@ -87,15 +97,17 @@
   promap["⠥"] = "u";  promap["⠧"] = "v";  promap["⠺"] = "w";  promap["⠭"] = "x";
   promap["⠽"] = "y";  promap["⠵"] = "z";
   
-  promap["⠂"] = ",";
-  promap["⠄"] = "'";
-  promap["⠦"] = "?";
-  promap["⠲"] = ".";
-  promap["⠖"] = "!";
-  promap["⠆"] = ";";
-  promap["⠒"] = ":";
-  promap["⠤"] = "-";
-  promap["⠯"] = "&";
+  promap["⠂"] = ",";  promap[","] = ",";
+  promap["⠄"] = "'";  promap["'"] = "'";
+  promap["⠦"] = "?";  promap["?"] = "?";
+  promap["⠲"] = ".";  promap["."] = ".";
+  promap["⠖"] = "!";  promap["!"] = "!";
+  promap["⠆"] = ";";  promap[";"] = ";";
+  promap["⠒"] = ":";  promap[":"] = ":";
+  promap["⠤"] = "-";  promap["-"] = "-";
+  promap["⠯"] = "&";  promap["&"] = "&";
+  
+  promap["⠶"] = "&#034;";
   
   promap["⠠⠠⠁"] = "A";  promap["⠠⠠⠃"] = "B";  promap["⠠⠠⠉"] = "C";  promap["⠠⠠⠙"] = "D";
   promap["⠠⠠⠑"] = "E";  promap["⠠⠠⠋"] = "F";  promap["⠠⠠⠛"] = "G";  promap["⠠⠠⠓"] = "H";
