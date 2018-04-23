@@ -2,7 +2,7 @@
         <head>
             <title>Braille Cipher</title>
             <script>
-  validator = "‘’“”⠯&⠤-⠒:⠆;⠖!⠦?abcdefghjiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
+  validator = "⠌/‘’“”⠯&⠤-⠒:⠆;⠖!⠦?àáâäåabcdêéëèefghjïíîìiklmnôöòõóøopqrstúüûùuvwxyzÅÄÂÁÀABCDËÈÉÊEFGHÏÍÎÌIJKLMNOÔÖÒÕÓØPQRSTÚÜÛÙUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
   vowels = "aeiouyAEIOUY";
 
   aemap = new Array();
@@ -14,7 +14,21 @@
   aemap["⠥"] = "u";  aemap["⠧"] = "v";  aemap["⠺"] = "w";  aemap["⠭"] = "x";
   aemap["⠽"] = "y";  aemap["⠵"] = "z";
   
-  aemap["⠂"] = ",";	 aemap[","] = ",";
+  aemap["à"] = "a";	   aemap["ê"] = "e";	aemap["ï"] = "i";	aemap["ô"] = "o";	aemap["ú"] = "u";
+  aemap["á"] = "a";    aemap["é"] = "e";	aemap["í"] = "i";   aemap["ö"] = "o";	aemap["ü"] = "u";
+  aemap["â"] = "a";    aemap["ë"] = "e";	aemap["î"] = "i";   aemap["ò"] = "o";	aemap["û"] = "u";
+  aemap["ä"] = "a";    aemap["è"] = "e";	aemap["ì"] = "i";   aemap["õ"] = "o";	aemap["ù"] = "u";
+  aemap["å"] = "a";										        aemap["ó"] = "o";
+														        aemap["ø"] = "o";
+	
+  aemap["À"] = "a";	   aemap["Ê"] = "e";	aemap["Ï"] = "i";	aemap["Ô"] = "o";	aemap["Ú"] = "u";
+  aemap["Á"] = "a";    aemap["É"] = "e";	aemap["Í"] = "i";   aemap["Ö"] = "o";	aemap["Ü"] = "u";
+  aemap["Â"] = "a";    aemap["Ë"] = "e";	aemap["Î"] = "i";   aemap["Ò"] = "o";	aemap["Û"] = "u";
+  aemap["Ä"] = "a";    aemap["È"] = "e";	aemap["Ì"] = "i";   aemap["Õ"] = "o";	aemap["Ù"] = "u";
+  aemap["Å"] = "a";										        aemap["Ó"] = "o";
+														        aemap["Ø"] = "o";
+
+  aemap["⠂"] = ",";	 aemap[","] = ",";	
   aemap["⠄"] = "'";	 aemap["'"] = "'";
   aemap["⠲"] = ".";	 aemap["."] = ".";
   aemap["⠦"] = "?";	 aemap["?"] = "?";
@@ -26,8 +40,9 @@
 					 aemap["‘"] = "‘";
 					 aemap["’"] = "’";
 					 aemap["“"] = "“";
-  aemap["⠶"] = "&#034;";
-  aemap["”"] = "”";
+  aemap["⠌"] = "/";
+					 aemap["”"] = "”";
+  aemap["⠶"] = "'";
  
   aemap["A"] = "a";  aemap["B"] = "b";  aemap["C"] = "c";  aemap["D"] = "d";
   aemap["E"] = "e";  aemap["F"] = "f";  aemap["G"] = "g";  aemap["H"] = "h";
@@ -69,6 +84,22 @@
   eamap["’"] = "⠄";	 
   eamap["“"] = "⠶";
   eamap["”"] = "⠶";
+  eamap["/"] = "⠌";  eamap["⠌"] = "/";
+					 eamap["⠶"] = "'";
+
+  eamap["À"] = "⠁";	   eamap["Ê"] = "⠑";	eamap["Ï"] = "⠊";	eamap["Ô"] = "⠕";	eamap["Ú"] = "⠥";
+  eamap["Á"] = "⠁";    eamap["É"] = "⠑";	eamap["Í"] = "⠊";   eamap["Ö"] = "⠕";	eamap["Ü"] = "⠥";
+  eamap["Â"] = "⠁";    eamap["Ë"] = "⠑";	eamap["Î"] = "⠊";   eamap["Ò"] = "⠕";	eamap["Û"] = "⠥";
+  eamap["Ä"] = "⠁";    eamap["È"] = "⠑";	eamap["Ì"] = "⠊";   eamap["Õ"] = "⠕";	eamap["Ù"] = "⠥";
+  eamap["Å"] = "⠁";										        eamap["Ó"] = "⠕";
+														        eamap["Ø"] = "⠕";
+	
+  eamap["à"] = "⠁";	   eamap["ê"] = "⠑";	eamap["ï"] = "⠊";	eamap["ô"] = "⠕";	eamap["ú"] = "⠥";
+  eamap["á"] = "⠁";    eamap["é"] = "⠑";	eamap["í"] = "⠊";   eamap["ö"] = "⠕";	eamap["ü"] = "⠥";
+  eamap["â"] = "⠁";    eamap["ë"] = "⠑";	eamap["î"] = "⠊";   eamap["ò"] = "⠕";	eamap["û"] = "⠥";
+  eamap["ä"] = "⠁";    eamap["è"] = "⠑";	eamap["ì"] = "⠊";   eamap["õ"] = "⠕";	eamap["ù"] = "⠥";
+  eamap["å"] = "⠁";										        eamap["ó"] = "⠕";
+														        eamap["ø"] = "⠕";
 
   eamap["A"] = "⠁";  eamap["B"] = "⠃";  eamap["C"] = "⠉";  eamap["D"] = "⠙";
   eamap["E"] = "⠑";  eamap["F"] = "⠋";  eamap["G"] = "⠛";  eamap["H"] = "⠓";
@@ -96,7 +127,20 @@
   promap["⠟"] = "q";  promap["⠗"] = "r";  promap["⠎"] = "s";  promap["⠞"] = "t";
   promap["⠥"] = "u";  promap["⠧"] = "v";  promap["⠺"] = "w";  promap["⠭"] = "x";
   promap["⠽"] = "y";  promap["⠵"] = "z";
-  
+ 
+  promap["à"] = "⠁";	promap["ê"] = "⠑";	promap["ï"] = "⠊";	 promap["ô"] = "⠕";	promap["ú"] = "⠥";
+  promap["á"] = "⠁";    promap["é"] = "⠑";	promap["í"] = "⠊";   promap["ö"] = "⠕";	promap["ü"] = "⠥";
+  promap["â"] = "⠁";    promap["ë"] = "⠑";	promap["î"] = "⠊";   promap["ò"] = "⠕";	promap["û"] = "⠥";
+  promap["ä"] = "⠁";    promap["è"] = "⠑";	promap["ì"] = "⠊";   promap["õ"] = "⠕";	promap["ù"] = "⠥";
+  promap["å"] = "⠁";										     promap["ó"] = "⠕";
+														         promap["ø"] = "⠕";
+
+  promap["À"] = "⠁";	promap["Ê"] = "⠑";	promap["Ï"] = "⠊";	 promap["Ô"] = "⠕";	promap["Ú"] = "⠥";
+  promap["Á"] = "⠁";    promap["É"] = "⠑";	promap["Í"] = "⠊";   promap["Ö"] = "⠕";	promap["Ü"] = "⠥";
+  promap["Â"] = "⠁";    promap["Ë"] = "⠑";	promap["Î"] = "⠊";   promap["Ò"] = "⠕";	promap["Û"] = "⠥";
+  promap["Ä"] = "⠁";    promap["È"] = "⠑";	promap["Ì"] = "⠊";   promap["Õ"] = "⠕";	promap["Ù"] = "⠥";
+  promap["Å"] = "⠁";										     promap["Ó"] = "⠕";
+														         promap["Ø"] = "⠕";
   promap["⠂"] = ",";  promap[","] = ",";
   promap["⠄"] = "'";  promap["'"] = "'";
   promap["⠦"] = "?";  promap["?"] = "?";
@@ -106,8 +150,8 @@
   promap["⠒"] = ":";  promap[":"] = ":";
   promap["⠤"] = "-";  promap["-"] = "-";
   promap["⠯"] = "&";  promap["&"] = "&";
-  
-  promap["⠶"] = "&#034;";
+  promap["⠌"] = "/";  promap["/"] = "/";
+  promap["⠶"] = "'";
   
   promap["⠠⠠⠁"] = "A";  promap["⠠⠠⠃"] = "B";  promap["⠠⠠⠉"] = "C";  promap["⠠⠠⠙"] = "D";
   promap["⠠⠠⠑"] = "E";  promap["⠠⠠⠋"] = "F";  promap["⠠⠠⠛"] = "G";  promap["⠠⠠⠓"] = "H";
@@ -122,7 +166,7 @@
   promap["m"] = "⠍";  promap["n"] = "⠝";  promap["o"] = "⠕";  promap["p"] = "⠏";
   promap["q"] = "⠟";  promap["r"] = "⠗";  promap["s"] = "⠎";  promap["t"] = "⠞";
   promap["u"] = "⠥";  promap["v"] = "⠧";  promap["w"] = "⠺";  promap["x"] = "⠭";
-  promap["y"] = "⠽";  promap["z"] = "⠵";  
+  promap["y"] = "⠽";  promap["z"] = "⠵";
 
                 function transme() {
                     if (document.theform.picker[0].checked) { // english to braille 
