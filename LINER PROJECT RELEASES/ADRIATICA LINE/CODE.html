@@ -1,66 +1,135 @@
 <html>
+
   <head>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <style>
       body {
       }
     </style>
+
+<style>
+
+#container {
+  position: relative;
+  width: 460px;
+  height: 46px;
+}
+#container div {
+  position: absolute;
+  width: 460px;
+  height: 46px;
+  opacity: 0;
+  background-image: url(https://varachack.github.io/Varachack/BUTTONS/U.png);
+    background-size: 460px 46px;
+}
+#container div.bottom {
+  opacity: 1;
+  background-image: url(https://varachack.github.io/Varachack/RELEASE%20STATUS/R.png);
+      background-size: 460px 46px;
+}
+#container div.top {
+  -webkit-animation: anim 3s infinite alternate;
+  animation: anim 3s infinite alternate;
+}
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  36.36% {
+    opacity: 0;
+  }
+  63.63% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  36.36% {
+    opacity: 0;
+  }
+  63.63% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
   </head>
-  <body>
 
-<center>
-<img src="http://theliners.droppages.com/tlp/release%20status/r.png" width="460" height="46">
-</center>
+<body>
 
-<hr>
-<table class="demo">
- <thead>
- <tr>
- </tr> </thead> <tbody> <tr>
-  <td>S.S. AUSONIA</td>
-  <td><center>1956</center></td>
- </tr>
- <tbody>
-</table>
-<hr>
+<div id="container">
+  <div class="bottom"></div>
+  <div class="top"></div>
+</div>
 
-<style>
-table {
-    font-family: 'Source Sans Pro', serif;
-    font-size: 24px;
-    width: 100%;
-}
+	<hr>
+	<table class="demo">
+		<thead>
+			<tr>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>S.S. AUSONIA</td>
+				<td><center>1956</center></td>
+			</tr>
+			<tr>
+				<td>S.S. SAN GIORGIO</td>
+				<td><center>1956</center></td>
+			</tr>
+			<tr>
+				<td>S.S. SAN MARCO</td>
+				<td><center>1956</center></td>
+			</tr>
+			<tbody>
+	</table>
+	<hr>
 
-td, th {
-    border: 1px solid #dddddd;
-    padding: 8px;
-}
+	<style>
+	table {
+		font-family: 'Source Sans Pro', serif;
+		font-size: 24px;
+		width: 100%;
+	}
+	
+	td,
+	th {
+		border: 1px solid #dddddd;
+		padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	</style>
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
+	<div>
+		<style>
+		body,
+		html {}
+		
+		div {
+			position: relative;
+			bottom: 0;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+		}
+		</style>
 
-<div>
-<style>
-body, html{
-}
-
-div{
-position:absolute;
-bottom:0;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-}
-</style>
-
-<table align="center">
- <tr>
-  <th>
+		<table align="center">
+			<tr>
+				<th>
    <center>
-    <a href="https://mega.nz/#!EttXwZCK!znCwKMyXNGyd3QC8NVs2rFBfZh0TWhdylGNvDVWc2QU" target="parent">
+    <a href="https://mega.nz/#!EwFnRT7K!4fxyFCM7GV3LBkKrkuTpUKmvuEZpJNflT6PNASoq3wY" target="parent">
      <img src="https://varachack.github.io/Varachack/BUTTONS/D3.png" width="210" height="58">
     </a>
    </center>
@@ -71,10 +140,11 @@ right: 0;
      <img src="https://varachack.github.io/Varachack/BUTTONS/D4.png" width="210" height="58">
     </a>
    </center>
-  </th>
- </tr>
-</table>
-</div>
+				</th>
+			</tr>
+		</table>
+	</div>
 
-  </body>
+</body>
+
 </html>
