@@ -2,7 +2,7 @@
         <head>
             <title>Braille Cipher</title>
             <script>
-  validator = "()⠦⠴⠌/‘’“”⠯&⠤-⠒:⠆;⠖!⠦⠷⠻⠹⠸⠳⠿⠠%*@$#?àáâäåabcdêéëèefghjïíîìiklmnôöòõóøopqrstúüûùuvwxyzÅÄÂÁÀABCDËÈÉÊEFGHÏÍÎÌIJKLMNOÔÖÒÕÓØPQRSTÚÜÛÙUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
+  validator = "()⠦⠴⠌/‘’“”⠯&⠤-⠒:⠆;⠖!⠦⠷⠻⠹⠸⠳⠿⠠⣒_%*@$#?àáâäåabcdêéëèefghjïíîìiklmnôöòõóøopqrstúüûùuvwxyzÅÄÂÁÀABCDËÈÉÊEFGHÏÍÎÌIJKLMNOÔÖÒÕÓØPQRSTÚÜÛÙUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
   vowels = "aeiouyAEIOUY";
 
   aemap = new Array();
@@ -51,6 +51,7 @@
   aemap["⠳"] = "$";  aemap["$"] = "$";
   aemap["⠿"] = "@";  aemap["@"] = "@";
   aemap["⠠"] = "%";  aemap["%"] = "%";
+  aemap["⣒"] = "_";  aemap["_"] = "_";
   
  
   aemap["A"] = "a";  aemap["B"] = "b";  aemap["C"] = "c";  aemap["D"] = "d";
@@ -102,6 +103,7 @@
   eamap["@"] = "⠿";  eamap["⠿"] = "@";
   eamap["*"] = "⠶";  eamap["⠶"] = "*";
   eamap["%"] = "⠠";  eamap["⠠"] = "%";
+  eamap["_"] = "⣒";  eamap["⣒"] = "_";
 
   eamap["À"] = "⠁";	   eamap["Ê"] = "⠑";	eamap["Ï"] = "⠊";	eamap["Ô"] = "⠕";	eamap["Ú"] = "⠥";
   eamap["Á"] = "⠁";    eamap["É"] = "⠑";	eamap["Í"] = "⠊";   eamap["Ö"] = "⠕";	eamap["Ü"] = "⠥";
@@ -177,6 +179,7 @@
   promap["⠿"] = "@";  promap["@"] = "@";
   promap["⠶"] = "*";  promap["*"] = "*";
   promap["⠠"] = "%";  promap["%"] = "%";
+  promap["⣒"] = "_";  promap["_"] = "_";
   
   promap["⠠⠠⠁"] = "A";  promap["⠠⠠⠃"] = "B";  promap["⠠⠠⠉"] = "C";  promap["⠠⠠⠙"] = "D";
   promap["⠠⠠⠑"] = "E";  promap["⠠⠠⠋"] = "F";  promap["⠠⠠⠛"] = "G";  promap["⠠⠠⠓"] = "H";
