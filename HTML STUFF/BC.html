@@ -2,7 +2,7 @@
         <head>
             <title>Braille Cipher</title>
             <script>
-  validator = "()⠦⠴⠌/‘’“”⠯&⠤-⠒:⠆;⠖!⠦àáâäåabcdêéëèefghjïíîìiklmnôöòõóøopqrstúüûùuvwxyzÅÄÂÁÀABCDËÈÉÊEFGHÏÍÎÌIJKLMNOÔÖÒÕÓØPQRSTÚÜÛÙUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
+  validator = "()⠦⠴⠌/‘’“”⠯&⠤-⠒:⠆;⠖!⠦⠷⠻⠹⠸⠳⠿⠠%*@$#?àáâäåabcdêéëèefghjïíîìiklmnôöòõóøopqrstúüûùuvwxyzÅÄÂÁÀABCDËÈÉÊEFGHÏÍÎÌIJKLMNOÔÖÒÕÓØPQRSTÚÜÛÙUVWXYZ⠶,⠂.⠲'⠄⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠅⠇⠍⠝⠕⠏⠟⠗⠎⠞⠥⠧⠺⠭⠽⠵";
   vowels = "aeiouyAEIOUY";
 
   aemap = new Array();
@@ -41,9 +41,16 @@
 					 aemap["“"] = "“";
   aemap["⠌"] = "/";
 					 aemap["”"] = "”";
-  aemap["⠶"] = "'";
+  aemap["⠶"] = "*";
   aemap["⠦"] = "(";	 aemap["("] = "(";
   aemap["⠴"] = ")";  aemap[")"] = ")";
+  aemap["⠷"] = "“";  aemap["“"] = "“";
+  aemap["⠻"] = "”";  aemap["”"] = "”";
+  aemap["⠹"] = "?";  aemap["?"] = "?";
+  aemap["⠸"] = "#";  aemap["#"] = "#";
+  aemap["⠳"] = "$";  aemap["$"] = "$";
+  aemap["⠿"] = "@";  aemap["@"] = "@";
+  aemap["⠠"] = "%";  aemap["%"] = "%";
   
  
   aemap["A"] = "a";  aemap["B"] = "b";  aemap["C"] = "c";  aemap["D"] = "d";
@@ -83,12 +90,18 @@
   eamap["&"] = "⠯";  eamap["⠯"] = "&";
   eamap["‘"] = "⠄";
   eamap["’"] = "⠄";	 
-  eamap["“"] = "⠶";
-  eamap["”"] = "⠶";
+  eamap["“"] = "⠷";	 eamap["⠻"] = "”";
+  eamap["”"] = "⠻";	 eamap["⠷"] = "“";
   eamap["/"] = "⠌";  eamap["⠌"] = "/";
 					 eamap["⠶"] = "'";
   eamap["("] = "⠦";  eamap["⠦"] = "(";
   eamap[")"] = "⠴";  eamap["⠴"] = ")";
+  eamap["?"] = "⠹";  eamap["⠹"] = "?";
+  eamap["#"] = "⠸";  eamap["⠸"] = "#";
+  eamap["$"] = "⠳";  eamap["⠳"] = "$";
+  eamap["@"] = "⠿";  eamap["⠿"] = "@";
+  eamap["*"] = "⠶";  eamap["⠶"] = "*";
+  eamap["%"] = "⠠";  eamap["⠠"] = "%";
 
   eamap["À"] = "⠁";	   eamap["Ê"] = "⠑";	eamap["Ï"] = "⠊";	eamap["Ô"] = "⠕";	eamap["Ú"] = "⠥";
   eamap["Á"] = "⠁";    eamap["É"] = "⠑";	eamap["Í"] = "⠊";   eamap["Ö"] = "⠕";	eamap["Ü"] = "⠥";
@@ -156,7 +169,14 @@
   promap["⠶"] = "'";
   promap["⠦"] = "(";  promap["("] = "(";
   promap["⠴"] = ")";  promap[")"] = ")";
-  
+  promap["⠷"] = "“";  promap["“"] = "“";
+  promap["⠻"] = "”";  promap["”"] = "”";
+  promap["⠹"] = "?";  promap["?"] = "?";
+  promap["⠸"] = "#";  promap["#"] = "#";
+  promap["⠳"] = "$";  promap["$"] = "$";
+  promap["⠿"] = "@";  promap["@"] = "@";
+  promap["⠶"] = "*";  promap["*"] = "*";
+  promap["⠠"] = "%";  promap["%"] = "%";
   
   promap["⠠⠠⠁"] = "A";  promap["⠠⠠⠃"] = "B";  promap["⠠⠠⠉"] = "C";  promap["⠠⠠⠙"] = "D";
   promap["⠠⠠⠑"] = "E";  promap["⠠⠠⠋"] = "F";  promap["⠠⠠⠛"] = "G";  promap["⠠⠠⠓"] = "H";
